@@ -1,0 +1,17 @@
+{
+  "name": "weathermaps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ajay Sunarthi",
+  "license": "ISC",
+  "engines": {
+    "node": "4.4.5"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

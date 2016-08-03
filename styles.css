@@ -1,0 +1,131 @@
+
+
+*,
+*:before,
+*:after {
+ box-sizing: inherit;
+
+}
+
+html,
+body {
+    font-size: 62.5%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.6em;
+    font-family: calibri;
+}
+
+.wrapper{
+    padding: 1.5vh;
+    background-color: white;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#map,#weather{
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+#mapcontainer{
+    height:100%;
+}
+
+#weather:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(142, 68, 173, 0.60);
+    z-index: 0;
+}
+
+
+
+#map{
+    height: 100%;
+}
+
+#weather{
+    position: relative;
+    background-size:cover;
+}
+
+.content-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    color: #fff;
+}
+
+.content{
+    position: relative;
+    width: 80%;
+    margin: 30px auto;
+}
+
+p{  
+    font-size: 1.5em;
+    margin-top: 6px;
+    margin-bottom: 6px; 
+    font-weight: 400;
+}
+
+.icon-box{
+    display: inline-block;
+    font-size: 2.2em;
+}
+
+h4{
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#main{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#country{
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    #map,#weather{
+    width: 90% !important;
+    margin: 0 auto; 
+    display: block;
+}
+#map{
+    height: 65vh ;
+}
+#weather{
+    height: 60vh;
+}
+h4{
+    font-size: 1.8em ;
+    font-weight: 500;
+}
+p{
+    font-size: 1.4em;
+}
+}
+
